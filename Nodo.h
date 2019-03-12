@@ -20,6 +20,6 @@ struct Nodo
 void Insertar(Nodo **,  char * );
 Nodo * CrearLista(int);
 void imprimir(Nodo**);
-void guardarLista(Nodo**);
+void guardarLista(Nodo**,char *);
 
 

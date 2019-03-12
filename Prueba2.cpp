@@ -6,10 +6,15 @@
 
 int main()
 {
-	Nodo * prueba = CrearLista(5);
-	
+	Nodo * prueba = CrearLista(2);
+				
 	imprimir(&prueba);
 
-	guardarLista(&prueba);
+	
+
+	cout << "\n Ingrese el nombre del archivo (Incluya la extension): ";
+	char * nombreArchivo = new char[25];
+	cin >> nombreArchivo;
+	guardarLista(&prueba,nombreArchivo);
 }
 

@@ -94,9 +94,10 @@ void imprimir(Nodo** ini )
 	} while (actual != 0);
 }
 
-void guardarLista(Nodo** ini)
+void guardarLista(Nodo** ini,char * nombre)
 {
-	ofstream archive("lista.dat", ios::app);
+
+	ofstream archive(nombre, ios::app);
 
 	if (!archive)
 	{
